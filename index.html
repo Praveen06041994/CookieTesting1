@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  document.cookie = "userConsent=true; path=/; max-age=86400";
+</script>
   <meta charset="UTF-8">
-  <title>Quick Heal - Consent Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-    }
-    h1 {
-      color: #333;
-    }
-    form {
-      max-width: 500px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
-    }
-    p {
-      font-weight: bold;
-    }
-    label {
-      display: block;
-      margin: 5px 0;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
-    button {
-      padding: 8px 16px;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-    #cookie-banner {
-      margin-top: 20px;
-      padding: 15px;
-      background: #eee;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <title>Customize Consent Preferences - Demo Purpose on 29th Jan 2026</title>
 </head>
 <body>
-  <h1>Quick Heal</h1>
+  <h1>Quick Heal - Consent Form English Marathi Hindi</h1>
+  <img src="https://sdpqa-hs.qhtpl.com/cpm-api/upload/v1/fileDownloads?fileUrl=hdfs://sdp-hdfs-namenode.hdfs.svc.cluster.local:9820/jars/1753812728744_Logo.jpg" alt="Logo">
+
   <form>
     <p>1) Gender: *</p>
     <label><input type="radio" name="gender" value="male"> Male</label>
@@ -60,27 +29,43 @@
     <label><input type="radio" name="under18" value="yes"> Yes</label>
     <label><input type="radio" name="under18" value="no"> No</label>
 
-    <div class="buttons">
-      <button type="reset">Cancel</button>
-      <button type="submit">Submit</button>
-    </div>
+    <button type="reset">Cancel</button>
+    <button type="submit">Submit</button>
   </form>
 
-  <!-- Cookie Consent Banner -->
-  <div id="cookie-banner">
-    <p>This site uses cookies to improve your experience. 
-       <button onclick="acceptCookies()">Accept</button>
-    </p>
-  </div>
+  <h2>Customize Consent Preferences - Demo Purpose on 29th Jan 2026</h2>
+  <p>
+    We use cookies to help you navigate between pages efficiently, store your preferences, and generally improve your experience of a website. 
+    However, we acknowledge your right to privacy and hence you can choose not to allow some types of cookies. 
+    Click on the different category headings to find out more and change our default settings. 
+    Please note that blocking certain types of cookies might affect your experience of the site.
+  </p>
 
-  <script>
-    function acceptCookies() {
-      // Set cookie only when user clicks Accept
-      document.cookie = "userConsent=accepted; path=/; max-age=86400";
-      // Hide the banner after acceptance
-      document.getElementById("cookie-banner").style.display = "none";
-    }
-  </script>
+  <h3>Marketing</h3>
+  <p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. 
+     They help provide relevant promotions based on user interests and browsing behavior.</p>
+  <ul>
+    <li>_ga_0000000001 (purpose: Marketing)</li>
+  </ul>
+
+  <h3>Functional</h3>
+  <p>We use these cookies to enhance website functionality and improve user experience. 
+     Information can include login data, region, language, and enhanced content.</p>
+  <ul>
+    <li>_ga (purpose: Functional)</li>
+  </ul>
+
+  <h3>Consent Options</h3>
+  <button type="button">Disable All</button>
+  <button type="button">No, I do not agree</button>
+  <button type="button">Accept Selected</button>
+  <button type="button">Accept All</button>
+
+  <p><a href="https://www.seqrite.com/data-privacy">Powered by Seqrite</a></p>
 </body>
 </html>
 
+
+  <link rel="stylesheet" href="seqrite-config.css"/>
+  <script data-config="seqriteConfig" type="application/javascript" src="seqrite.js"></script>
+  <script type="application/javascript" src="seqrite-config.js"></script>
