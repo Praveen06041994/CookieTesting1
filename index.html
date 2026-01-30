@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script> document.cookie = "userConsent=true; path=/; max-age=86400"; </script>
   <meta charset="UTF-8">
   <title>Quick Heal - Consent Form</title>
   <style>
@@ -33,6 +32,12 @@
       margin-right: 10px;
       cursor: pointer;
     }
+    #cookie-banner {
+      margin-top: 20px;
+      padding: 15px;
+      background: #eee;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -60,5 +65,22 @@
       <button type="submit">Submit</button>
     </div>
   </form>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner">
+    <p>This site uses cookies to improve your experience. 
+       <button onclick="acceptCookies()">Accept</button>
+    </p>
+  </div>
+
+  <script>
+    function acceptCookies() {
+      // Set cookie only when user clicks Accept
+      document.cookie = "userConsent=accepted; path=/; max-age=86400";
+      // Hide the banner after acceptance
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+  </script>
 </body>
 </html>
+
